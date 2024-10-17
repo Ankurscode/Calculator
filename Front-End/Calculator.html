@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculator</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="flex flex-col items-center justify-center min-h-screen bg-white"
+<h1 class="text-9xl font-bold mb-6">Ankur's Calculator</h1>
+<body class="bg-white-100 flex items-center justify-center h-screen">
+  <div class="bg-black rounded-lg shadow-lg p-8 w-96">
+    <!-- Display -->
+    <div id="display" class="bg-gray-200 text-right p-6 rounded-lg text-4xl font-mono mb-6">
+      0
+    </div>
+    
+    <!-- Calculator Buttons -->
+    <div class="grid grid-cols-4 gap-4">
+      <!-- Row 1 -->
+      <button class="bg-gray-300 p-6 rounded text-2xl font-bold flex justify-center items-end">7</button>
+      <button class="bg-gray-300 p-6 rounded text-2xl font-bold flex justify-center items-end">8</button>
+      <button class="bg-gray-300 p-6 rounded text-2xl font-bold flex justify-center items-end">9</button>
+      <button class="bg-yellow-400 p-6 rounded text-2xl font-bold flex justify-center items-end">/</button>
+
+      <!-- Row 2 -->
+      <button class="bg-gray-300 p-6 rounded text-2xl font-bold flex justify-center items-end">4</button>
+      <button class="bg-gray-300 p-6 rounded text-2xl font-bold flex justify-center items-end">5</button>
+      <button class="bg-gray-300 p-6 rounded text-2xl font-bold flex justify-center items-end">6</button>
+      <button class="bg-yellow-400 p-6 rounded text-2xl font-bold flex justify-center items-end">*</button>
+
+      <!-- Row 3 -->
+      <button class="bg-gray-300 p-6 rounded text-2xl font-bold flex justify-center items-end">1</button>
+      <button class="bg-gray-300 p-6 rounded text-2xl font-bold flex justify-center items-end">2</button>
+      <button class="bg-gray-300 p-6 rounded text-2xl font-bold flex justify-center items-end">3</button>
+      <button class="bg-yellow-400 p-6 rounded text-2xl font-bold flex justify-center items-end">-</button>
+
+      <!-- Row 4 -->
+      <button class="bg-gray-300 p-6 rounded text-2xl font-bold flex justify-center items-end">0</button>
+      <button class="bg-gray-300 p-6 rounded text-2xl font-bold flex justify-center items-end">.</button>
+      <button class="bg-red-400 p-6 rounded text-2xl font-bold flex justify-center items-end">C</button>
+      <button class="bg-yellow-400 p-6 rounded text-2xl font-bold flex justify-center items-end">+</button>
+
+      <!-- Row 5 (Equals button spans 4 columns) -->
+      <button class="bg-green-500 p-6 rounded text-2xl font-bold col-span-4 flex justify-center items-end">=</button>
+    </div>
+  </div>
+  <script src="./script.js"></script>
+</body>
+</html>
